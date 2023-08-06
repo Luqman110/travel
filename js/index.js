@@ -7,3 +7,10 @@ Array.from(document.getElementsByTagName('input')).forEach((e, i)=>{
         }
     })
 })
+
+let menu_btn = getElementsByClassName('bi-three-dots')[0];
+let menu_box =document.getElementById('menu_box');
+
+menu_btn.addEventListener('click', ()=>{
+    menu_box.classList.toggle('ul_active');
+})
